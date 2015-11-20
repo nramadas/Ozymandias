@@ -3,7 +3,7 @@ import BrowserWindow    from "browser-window";
 
 const WINDOWS = {
     "main": null,
-}
+};
 
 app.on("window-all-closed", () => {
     if (process.platform != "darwin") {
@@ -12,5 +12,8 @@ app.on("window-all-closed", () => {
 });
 
 app.on("ready", () => {
-    const mainWindow = new BrowserWindow({width: 800, height: 800});
+    WINDOWS.main = new BrowserWindow({width: 800, height: 800});
+    WINDOWS.main.on("closed", () => WINDOWS.main = null);
+    WINDOWS.main.loadUrl("file://" + __dirname + "/../App.html");
+    WINDOWS.main.show();
 });

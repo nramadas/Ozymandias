@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ozymandias</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800|Gentium+Book+Basic:400,800' rel='stylesheet' type='text/css'>
+    <style>
+        #container {
+            position: "absolute";
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+  </head>
+  <body>
+      <div id="container"></div>
+      <script>
+        require('babel-core/register');
+        var React = require("react");
+        var ReactDOM = require("react-dom");
+        var App = require("./components/App.js").default;
+        ReactDOM.render(React.createElement(App, {}), document.getElementById("container"));
+      </script>
+  </body>
+</html>
