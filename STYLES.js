@@ -1,7 +1,11 @@
 export const COLORS = {
     red: "#DC3522",
+    yellow: "#FF9800",
     cream: "#D9CB9E",
+    lightblue: "#7E8AA2",
+    darkblue: "#263248",
     teal: "#374140",
+    lightteal: "#3F4A49",
     slate: "#2A2C2B",
     black: "#1E1E20",
 };

@@ -8,7 +8,7 @@ const STYLE = {
     },
 
     content: {
-        ...MIXINS.centeredBox({width: 550, height: 550}),
+        ...MIXINS.centeredBox({width: 440, height: 550}),
     },
 
     title: {
@@ -16,13 +16,13 @@ const STYLE = {
         marginBottom: 40,
         fontWeight: 800,
         textAlign: "center",
-        color: COLORS.red,
+        color: COLORS.cream,
     },
 
     line: {
         ...MIXINS.font(20, 30, "Gentium Book Basic"),
         fontWeight: 400,
-        color: COLORS.cream,
+        color: COLORS.lightteal,
     },
 };
 
